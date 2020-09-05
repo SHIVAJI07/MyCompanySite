@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCompanySite</title>
+</head>
+<script src="https://kit.fontawesome.com/4af1cdcf06.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <div style="background-color:rgba(34, 121, 252, 0.644)">
+        <ul class="navbar">
+            <li>
+                <a href="#home">
+                    <i class=" color-white fas fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar nav-right">
+            <li><i class=" color-white fas fa-expand"></i></li>
+            <li><i class=" color-white fas fa-user-circle"></i></li>
+            <li><i class=" color-white fas fa-bell"></i></li>
+        </ul>
+    </div>
+    <div>
+        <div class="title">
+            <h2 class="main-title">MyCompany
+            </h2>
+            <h4 class="left-title ">
+                <a href="#HOME"><span class="sub-head-1">Home</span></a>
+            </h4>
+            <h4 class="left-title">Dashbord</h4>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col col-1">
+                <div class="col-pad col-1-pad">
+                    <div class="text-center icon-font ">
+                        <span>Total Income</span>
+                        <p class="icon-para "> </p>
+
+                    </div><canvas id="chart-1" style="max-width: 500px;"></canvas></div>
+            </div>
+            <div class="col col-1">
+                <div class="col-pad col-1-pad">
+                    <div class="text-center icon-font ">
+                        <span>Recent Activity</span>
+                        <p class="icon-para "> </p>
+
+                    </div><canvas id="chart-2" style="max-width: 500px;"></canvas></div>
+            </div>
+            <div class="col col-1">
+                <div class="col-pad col-1-pad">
+                    <div class="text-center icon-font ">
+                        <span>Total Sales</span>
+                        <p class="icon-para "> </p>
+
+                    </div><canvas id="chart-3" style="max-width: 500px;"></canvas> </div>
+            </div>
+            <div class="col col-1">
+                <div class="col-pad col-1-pad">
+                    <div class="text-center icon-font ">
+                        <span>Active User</span>
+                        <p class="icon-para "> </p>
+
+                    </div><canvas id="chart-4" style="max-width: 500px;"></canvas> </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class=" col col-2">
+                <div class=" col-pad col-2-pad">
+                    <p class="sub-head-2">
+                        <span class="sub-head-1">Recent
+                    </span> Report</p>
+                    <canvas id="chart" style="max-width: 500px;"></canvas></div>
+            </div>
+            <div class=" col col-2 ">
+                <div class=" col-pad col-2-pad ">
+                    <p class="sub-head-2">
+                        <span class="sub-head-1">Recent
+                    </span> Report</p>
+                    <canvas id="myChart" style=" max-width: 500px; "></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col col-3-1 ">
+                <div class="col-pad col-3-pad ">
+                    <p class="sub-head-2">
+                        <span class="sub-head-1">Client
+                </span>Details</p>
+
+                    <table class="table">
+                        <thead>
+                            <tr style="background-color: white;">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Projrct Name</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>SHIV</td>
+                                <td>xy@gmail.com</td>
+                                <td>Lorex</td>
+                                <td>Active</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>MAX</td>
+                                <td>xy@gmail.com</td>
+                                <td>Portfolio</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>JOY</td>
+                                <td>xy@gmail.com</td>
+                                <td>Amazon</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>SHIVM</td>
+                                <td>xy@gmail.com</td>
+                                <td>Tinder</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>RICH</td>
+                                <td>xy@gmail.com</td>
+                                <td>TikTok</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>DANE</td>
+                                <td>xy@gmail.com</td>
+                                <td>FAU-G</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="margin-bottom:40px;">
+                <div class="col col-3-2 ">
+                    <div class="col-pad col-3-pad ">
+                        <p class="sub-head-2">
+                            <span class="sub-head-1">New
+                        </span>Projects</p>
+                        </br>
+                        <table>
+                            <thead>
+                                <tr style="background-color: white;">
+                                    <th>Product</th>
+                                    <th>Employee</th>
+                                    <th>Cost</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>moto 5</td>
+                                    <td>SHIV</td>
+                                    <td>Rs.16000</td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>iPhone X</td>
+                                    <td>MAX</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>iPhone 8</td>
+                                    <td>JOY</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>LAVA</td>
+                                    <td>SHIVM</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>MicroMAX</td>
+                                    <td>RICH</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>MI</td>
+                                    <td>DANE</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Redmi</td>
+                                    <td>DANE</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>OnePlus</td>
+                                    <td>DANE</td>
+                                    <td>Rs.16000</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col col-4 ">
+                <div class="col-pad col-1-pad ">
+                    <div class="icon-center "><i style=" font-size:45px; color:rgba(18, 88, 240, 0.89) " class=" fab fa-twitter ">
+                    </i></div>
+                    <div class="text-center icon-font ">
+                        <span>Twitter</span>
+                        <p class="icon-para ">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                        </p>
+                        <a style="color:rgb(38, 163, 221); text-decoration:none " class=" icon-para " href="#home ">Learn More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4 ">
+                <div class="col-pad col-1-pad ">
+                    <div class="icon-center "><i style="font-size:45px; color:rgba(253, 36, 21, 0.87) " class=" fab fa-instagram ">
+                    </i>
+                    </div>
+                    <div class="text-center icon-font ">
+                        <span>Instagram</span>
+                        <p class="icon-para ">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                        </p><a style="color:rgb(38, 163, 221); text-decoration:none " class=" icon-para " href="#home ">Learn More</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4 ">
+                <div class="col-pad col-1-pad ">
+                    <div class="icon-center "><i style=" font-size:45px; color:rgba(18, 122, 240, 0.877) " class=" fab fa-facebook-f ">
+                    </i>
+                    </div>
+                    <div class="text-center icon-font ">
+                        <span>Facebook</span>
+                        <p class="icon-para ">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                        </p>
+                        <a style="color:rgb(38, 163, 221); text-decoration:none " class=" icon-para " href="#home ">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <h5>Contact:XXXXXXXXXX</h5>Email:shivajizanjat32@gmail.com </div>
+    </div>
+
+
+</body>
+<script src="index.js "></script>
+
+
+</html>

@@ -1,0 +1,194 @@
+    body {
+        background-color: rgba(213, 221, 224, 0.342);
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .nav-right {
+        float: right;
+    }
+    
+    .color-white {
+        color: white;
+        font-size: 25px;
+    }
+    
+    ul li {
+        float: left;
+        list-style-type: none;
+        padding-right: 30px;
+    }
+    
+    .title {
+        display: inline-block;
+    }
+    
+    .main-title {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        float: left;
+        padding-left: 20px;
+    }
+    
+    .left-title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        float: left;
+        padding: 15px 0px 5px 15px;
+        text-decoration: none;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .col {
+        float: left;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .col-pad {
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(189, 180, 180, 0.2), 0 6px 20px 0 rgba(148, 145, 145, 0.19);
+    }
+    
+    .col-1 {
+        width: 25%;
+    }
+    
+    .col-1-pad {
+        padding: 15px;
+    }
+    
+    .col-2 {
+        width: 50%;
+    }
+    
+    .col-2-pad {
+        padding: 10px 20px 20px;
+    }
+    
+    canvas {
+        margin: auto;
+    }
+    
+    .sub-head-1 {
+        color: blueviolet
+    }
+    
+    .sub-head-2 {
+        font-size: 20px;
+        color: #666;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .col-3-1 {
+        width: 66.66%;
+    }
+    
+    .col-3-2 {
+        width: 33.33%;
+    }
+    
+    .col-3-pad {
+        padding: 20px;
+        overflow: auto;
+    }
+    
+    .col-4 {
+        width: 33.33%;
+    }
+    
+    .icon-center {
+        width: 7%;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    
+    .icon-font {
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .text-center {
+        margin-top: 18px;
+        padding: 0px 0 0px 0;
+        text-align: center;
+    }
+    
+    .icon-para {
+        font-size: 15px;
+        color: rgb(58, 57, 57);
+        line-height: 20px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    table,
+    td {
+        text-align: center;
+        padding: 1em;
+        border-top: 1px solid rgba(187, 185, 185, 0.842);
+        border-bottom: 1px solid rgba(190, 189, 189, 0.842);
+    }
+    
+    th {
+        padding: 20px;
+    }
+    
+    tr:hover {
+        background-color: rgba(212, 211, 211, 0.493);
+    }
+    
+    .footer {
+        padding: 30px 0 40px 0;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    @media screen and (max-width: 900px) {
+        .col-1 {
+            width: 50%;
+        }
+        .col-2,
+        .col-4,
+        .col-3-1,
+        .col-3-2 {
+            width: 100%;
+        }
+        body {
+            padding: 0;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .col-1,
+        .col-2,
+        .col-3-1,
+        .col-3-2,
+        .col-4 {
+            width: 100%;
+            padding: 10px 30px 10px;
+        }
+        body {
+            padding: 0;
+        }
+    }
