@@ -7,6 +7,29 @@
         box-sizing: border-box;
     }
     
+    .menubar {
+        float: left;
+        width: 5%;
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+        background-color: white;
+        transition-duration: 0.4s;
+    }
+    
+    .cls-btn {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        border: 1px solid black;
+    }
+    
+    .dashboard {
+        width: 95%;
+        float: right;
+        transition-duration: 0.4s;
+    }
+    
     .navbar {
         display: inline-block;
     }

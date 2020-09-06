@@ -1,3 +1,24 @@
+document.querySelector(".expandMenu").addEventListener("click", changeWidth);
+
+function changeWidth() {
+    document.querySelector(".menubar").style.width = "20%";
+    document.querySelector(".dashboard").style.width = "80%";
+    document.querySelector(".cls-btn").style.display = "block";
+
+}
+
+document.querySelector(".cls-btn").addEventListener("click", restore);
+
+function restore() {
+    document.querySelector(".menubar").style.width = "5%";
+    document.querySelector(".dashboard").style.width = "95%";
+    document.querySelector(".cls-btn").style.display = "none";
+
+}
+
+
+
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie',
